@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Convenience script to run add_page_numbers.py from the root directory."""
+
+import subprocess
+import sys
+from pathlib import Path
+
+# Get the directory containing this script
+script_dir = Path(__file__).parent.absolute()
+src_dir = script_dir / "src"
+add_page_numbers_script = src_dir / "add_page_numbers.py"
+
+# Python executable path (assuming virtual environment)
+python_exe = script_dir / "venv" / "bin" / "python"
+
+if not python_exe.exists():
+    # Fallback to system python
+    python_exe = "python3"
+
+# Run the actual script with all arguments
+try:
+    result = subprocess.run(
+        [str(python_exe), str(add_page_numbers_script)] + sys.argv[1:],
+        cwd=str(script_dir),
+    )
+    sys.exit(result.returncode)
+except FileNotFoundError:
+    print("Error: Could not find Python executable or add_page_numbers.py script.")
+    sys.exit(1)
+except KeyboardInterrupt:
+    sys.exit(130)

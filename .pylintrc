@@ -1,0 +1,41 @@
+[MASTER]
+# Use multiple processes to speed up Pylint
+jobs=1
+
+# Allow loading of arbitrary C extensions
+unsafe-load-any-extension=no
+
+[MESSAGES CONTROL]
+# Disable the following warnings that are acceptable for this project:
+# R0801: duplicate-code - Expected when demo.py and section_binding.py share similar logic
+# R0914: too-many-locals - Acceptable for the main processing function
+# R0911: too-many-return-statements - Acceptable for CLI error handling
+# R0912: too-many-branches - Acceptable for CLI argument validation
+# C0415: import-outside-toplevel - Acceptable for conditional imports to avoid circular imports
+# R0401: cyclic-import - Expected minimal cyclic import between core and cli modules
+disable=duplicate-code,too-many-locals,too-many-return-statements,too-many-branches,import-outside-toplevel,cyclic-import
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=88
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=8
+
+# Maximum number of locals for function / method body
+max-locals=20
+
+# Maximum number of return statements in function / method body
+max-returns=8
+
+# Maximum number of branch for function / method body
+max-branches=15
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_,e,f,fp
+
+[IMPORTS]
+# Allow wildcard imports in __init__.py files
+allow-wildcard-with-all=yes

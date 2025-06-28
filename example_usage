@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+"""
+Convenience script to run example usage demonstrations.
+
+This script allows you to run the example usage demonstrations from the project root
+without having to navigate to the src/ directory.
+"""
+
+import subprocess
+import sys
+from pathlib import Path
+
+
+def main():
+    """Run the example_usage.py script from src/ directory."""
+    script_path = Path(__file__).parent / "src" / "example_usage.py"
+
+    if not script_path.exists():
+        print("Error: example_usage.py not found in src/ directory")
+        return 1
+
+    # Pass all arguments to the actual script
+    cmd = [sys.executable, str(script_path)] + sys.argv[1:]
+
+    try:
+        return subprocess.run(cmd, check=False).returncode
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user.")
+        return 130
+
+
+if __name__ == "__main__":
+    sys.exit(main())
