@@ -1,20 +1,53 @@
 # PDF Section Binding Tool
 
+[![PyPI version](https://badge.fury.io/py/pdf-section-binding.svg)](https://badge.fury.io/py/pdf-section-binding)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pdf-section-binding)](https://pypi.org/project/pdf-section-binding/)
+[![GitHub release](https://img.shields.io/github/release/sravanrekandar/section-binding.svg)](https://github.com/sravanrekandar/section-binding/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This tool reorders PDF pages for section binding (bookbinding), where pages are arranged in signatures (folded sheets) so that when printed and folded, they appear in the correct reading order.
+
+## Quick Links
+
+🚀 **Install**: `pip install pdf-section-binding`  
+📦 **PyPI**: [Production Package](https://pypi.org/project/pdf-section-binding/)  
+🧪 **TestPyPI**: [Test Package](https://test.pypi.org/project/pdf-section-binding/)  
+📖 **Source**: [GitHub Repository](https://github.com/sravanrekandar/section-binding)  
+🐛 **Issues**: [Bug Reports](https://github.com/sravanrekandar/section-binding/issues)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [How Section Binding Works](#how-section-binding-works)
+- [Library Usage](#library-usage)
+- [Development](#development)
+- [Requirements](#requirements)
+- [Binding Instructions](#binding-instructions)
+- [License](#license)
+- [Contributing](#contributing)
+- [Support](#support)
 
 ## Installation
 
 ### From PyPI (Recommended)
 
+[![PyPI version](https://badge.fury.io/py/pdf-section-binding.svg)](https://badge.fury.io/py/pdf-section-binding)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pdf-section-binding)](https://pypi.org/project/pdf-section-binding/)
+
 ```bash
 pip install pdf-section-binding
 ```
+
+📦 **PyPI Package**: [https://pypi.org/project/pdf-section-binding/](https://pypi.org/project/pdf-section-binding/)  
+🧪 **TestPyPI Package**: [https://test.pypi.org/project/pdf-section-binding/](https://test.pypi.org/project/pdf-section-binding/)
 
 ### From Source
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pdf-section-binding.git
+git clone https://github.com/sravanrekandar/pdf-section-binding.git
 cd pdf-section-binding
 ```
 
@@ -276,3 +309,26 @@ After running the script:
    - Perfect binding (glue)
    - Spiral binding
    - Or other binding methods
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## Support
+
+- 📦 **PyPI Package**: [https://pypi.org/project/pdf-section-binding/](https://pypi.org/project/pdf-section-binding/)
+- 📖 **Source Code**: [https://github.com/sravanrekandar/section-binding](https://github.com/sravanrekandar/section-binding)
+- 🐛 **Report Issues**: [https://github.com/sravanrekandar/section-binding/issues](https://github.com/sravanrekandar/section-binding/issues)
+
+## Author
+
+**Sravan Kumar Rekandar**  
+- GitHub: [@sravanrekandar](https://github.com/sravanrekandar)
+
+---
+
+*Made with ❤️ for the bookbinding community*
