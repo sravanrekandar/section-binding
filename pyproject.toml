@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pdf-section-binding"
-version = "1.0.1"
+version = "1.0.2"
 authors = [
     {name = "Sravan Kumar Rekandar", email = "sravankumarrekandar@example.com"},
 ]
@@ -51,10 +51,10 @@ test = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/pdf-section-binding"
-"Bug Reports" = "https://github.com/yourusername/pdf-section-binding/issues"
-"Source" = "https://github.com/yourusername/pdf-section-binding"
-"Documentation" = "https://github.com/yourusername/pdf-section-binding#readme"
+"Homepage" = "https://github.com/sravanrekandar/pdf-section-binding"
+"Bug Reports" = "https://github.com/sravanrekandar/pdf-section-binding/issues"
+"Source" = "https://github.com/sravanrekandar/pdf-section-binding"
+"Documentation" = "https://github.com/sravanrekandar/pdf-section-binding#readme"
 
 [project.scripts]
 pdf-section-binding = "pdf_section_binding.cli:main"
