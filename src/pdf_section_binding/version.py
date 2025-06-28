@@ -1,6 +1,6 @@
 """Version information for pdf-section-binding."""
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = "Sravan Kumar Rekandar"
 __email__ = "sravankumarrekandar@example.com"
 __description__ = (
